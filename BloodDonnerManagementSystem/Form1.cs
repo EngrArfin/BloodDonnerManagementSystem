@@ -16,5 +16,28 @@ namespace BloodDonnerManagementSystem
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String username = textBox1.Text;
+            String password = textBox2.Text;
+
+            if (username == "admin" && password == "admin")
+            {
+                Dashboard db = new Dashboard();
+                db.Show();
+            }
+            else
+            {
+                MessageBox.Show("Enter valid Username Or Password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
