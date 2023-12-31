@@ -21,5 +21,18 @@ namespace BloodDonnerManagementSystem
         {
             Application.Exit();
         }
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 logout = new Form1();
+            logout.Show();
+            this.Hide();
+        }
+
+        private void addNewDonorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddNewDonor ad = new AddNewDonor();
+            ad.Show();
+        }
     }
 }
