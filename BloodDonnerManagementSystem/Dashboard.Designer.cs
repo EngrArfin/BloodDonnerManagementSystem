@@ -99,6 +99,7 @@
             this.updateDetailsToolStripMenuItem.Name = "updateDetailsToolStripMenuItem";
             this.updateDetailsToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.updateDetailsToolStripMenuItem.Text = "Update Details";
+            this.updateDetailsToolStripMenuItem.Click += new System.EventHandler(this.updateDetailsToolStripMenuItem_Click);
             // 
             // allDonorDetailsToolStripMenuItem
             // 

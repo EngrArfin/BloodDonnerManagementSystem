@@ -10,26 +10,16 @@ using System.Windows.Forms;
 
 namespace BloodDonnerManagementSystem
 {
-    public partial class AddNewDonor : Form
+    public partial class UpdateDonnerDetails : Form
     {
-        public AddNewDonor()
+        public UpdateDonnerDetails()
         {
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void txtEmail_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

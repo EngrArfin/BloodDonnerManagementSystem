@@ -34,5 +34,11 @@ namespace BloodDonnerManagementSystem
             AddNewDonor ad = new AddNewDonor();
             ad.Show();
         }
+
+        private void updateDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UpdateDonnerDetails up = new UpdateDonnerDetails();
+            up.Show();
+        }
     }
 }

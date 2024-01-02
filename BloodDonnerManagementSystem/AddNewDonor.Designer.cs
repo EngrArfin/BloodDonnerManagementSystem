@@ -208,20 +208,22 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(609, 232);
+            this.txtEmail.Location = new System.Drawing.Point(608, 231);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(161, 20);
+            this.txtEmail.Size = new System.Drawing.Size(199, 20);
             this.txtEmail.TabIndex = 16;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // txtCity
             // 
             this.txtCity.Location = new System.Drawing.Point(609, 330);
             this.txtCity.Name = "txtCity";
-            this.txtCity.Size = new System.Drawing.Size(160, 20);
+            this.txtCity.Size = new System.Drawing.Size(198, 20);
             this.txtCity.TabIndex = 17;
             // 
             // txtDOB
             // 
+            this.txtDOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.txtDOB.Location = new System.Drawing.Point(258, 361);
             this.txtDOB.Name = "txtDOB";
             this.txtDOB.Size = new System.Drawing.Size(200, 20);
@@ -229,6 +231,7 @@
             // 
             // tnxGender
             // 
+            this.tnxGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.tnxGender.FormattingEnabled = true;
             this.tnxGender.Items.AddRange(new object[] {
             "Male",
@@ -241,6 +244,7 @@
             // 
             // txtBlood
             // 
+            this.txtBlood.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtBlood.FormattingEnabled = true;
             this.txtBlood.Items.AddRange(new object[] {
             "A+",
@@ -253,14 +257,14 @@
             "B-"});
             this.txtBlood.Location = new System.Drawing.Point(608, 279);
             this.txtBlood.Name = "txtBlood";
-            this.txtBlood.Size = new System.Drawing.Size(161, 21);
+            this.txtBlood.Size = new System.Drawing.Size(199, 21);
             this.txtBlood.TabIndex = 20;
             // 
             // txtAddress
             // 
             this.txtAddress.Location = new System.Drawing.Point(608, 372);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(207, 96);
+            this.txtAddress.Size = new System.Drawing.Size(199, 96);
             this.txtAddress.TabIndex = 21;
             this.txtAddress.Text = "";
             // 
@@ -313,16 +317,16 @@
             this.label13.ForeColor = System.Drawing.Color.DarkRed;
             this.label13.Location = new System.Drawing.Point(256, 187);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(25, 25);
+            this.label13.Size = new System.Drawing.Size(26, 25);
             this.label13.TabIndex = 25;
-            this.label13.Text = "1";
+            this.label13.Text = "  ";
             // 
             // AddNewDonor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(909, 628);
+            this.ClientSize = new System.Drawing.Size(957, 628);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnReset);
