@@ -236,50 +236,51 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(250, 190);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(184, 20);
+            this.textBox2.Size = new System.Drawing.Size(201, 20);
             this.textBox2.TabIndex = 19;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(250, 234);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(184, 20);
+            this.textBox3.Size = new System.Drawing.Size(201, 20);
             this.textBox3.TabIndex = 20;
             // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(250, 284);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(184, 20);
+            this.textBox4.Size = new System.Drawing.Size(201, 20);
             this.textBox4.TabIndex = 21;
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(250, 382);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(184, 20);
+            this.textBox5.Size = new System.Drawing.Size(201, 20);
             this.textBox5.TabIndex = 22;
             // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(605, 290);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(184, 20);
+            this.textBox6.Size = new System.Drawing.Size(201, 20);
             this.textBox6.TabIndex = 23;
             // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(605, 183);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(184, 20);
+            this.textBox7.Size = new System.Drawing.Size(201, 20);
             this.textBox7.TabIndex = 24;
+            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(250, 338);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(184, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(201, 20);
             this.dateTimePicker1.TabIndex = 25;
             // 
             // comboBox1
@@ -292,7 +293,7 @@
             "Other"});
             this.comboBox1.Location = new System.Drawing.Point(250, 426);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(184, 21);
+            this.comboBox1.Size = new System.Drawing.Size(201, 21);
             this.comboBox1.TabIndex = 26;
             // 
             // comboBox2
@@ -310,14 +311,14 @@
             "B-"});
             this.comboBox2.Location = new System.Drawing.Point(605, 241);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(184, 21);
+            this.comboBox2.Size = new System.Drawing.Size(201, 21);
             this.comboBox2.TabIndex = 27;
             // 
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(605, 355);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(184, 96);
+            this.richTextBox1.Size = new System.Drawing.Size(201, 96);
             this.richTextBox1.TabIndex = 28;
             this.richTextBox1.Text = "";
             // 

@@ -55,6 +55,7 @@
             this.btnReset = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
+            this.labelNewID = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -210,7 +211,7 @@
             // 
             this.txtEmail.Location = new System.Drawing.Point(608, 231);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(199, 20);
+            this.txtEmail.Size = new System.Drawing.Size(217, 20);
             this.txtEmail.TabIndex = 16;
             this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
@@ -218,7 +219,7 @@
             // 
             this.txtCity.Location = new System.Drawing.Point(609, 330);
             this.txtCity.Name = "txtCity";
-            this.txtCity.Size = new System.Drawing.Size(198, 20);
+            this.txtCity.Size = new System.Drawing.Size(216, 20);
             this.txtCity.TabIndex = 17;
             // 
             // txtDOB
@@ -257,14 +258,14 @@
             "B-"});
             this.txtBlood.Location = new System.Drawing.Point(608, 279);
             this.txtBlood.Name = "txtBlood";
-            this.txtBlood.Size = new System.Drawing.Size(199, 21);
+            this.txtBlood.Size = new System.Drawing.Size(217, 21);
             this.txtBlood.TabIndex = 20;
             // 
             // txtAddress
             // 
             this.txtAddress.Location = new System.Drawing.Point(608, 372);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(199, 96);
+            this.txtAddress.Size = new System.Drawing.Size(217, 96);
             this.txtAddress.TabIndex = 21;
             this.txtAddress.Text = "";
             // 
@@ -321,12 +322,24 @@
             this.label13.TabIndex = 25;
             this.label13.Text = "  ";
             // 
+            // labelNewID
+            // 
+            this.labelNewID.AutoSize = true;
+            this.labelNewID.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNewID.ForeColor = System.Drawing.SystemColors.Menu;
+            this.labelNewID.Location = new System.Drawing.Point(264, 181);
+            this.labelNewID.Name = "labelNewID";
+            this.labelNewID.Size = new System.Drawing.Size(30, 31);
+            this.labelNewID.TabIndex = 26;
+            this.labelNewID.Text = "1";
+            // 
             // AddNewDonor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(957, 628);
+            this.Controls.Add(this.labelNewID);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnReset);
@@ -355,6 +368,7 @@
             this.Controls.Add(this.label1);
             this.Name = "AddNewDonor";
             this.Text = "AddNewDonor";
+            this.Load += new System.EventHandler(this.AddNewDonor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -388,5 +402,6 @@
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label labelNewID;
     }
 }

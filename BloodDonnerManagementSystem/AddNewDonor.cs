@@ -31,5 +31,14 @@ namespace BloodDonnerManagementSystem
         {
 
         }
+
+        private void AddNewDonor_Load(object sender, EventArgs e)
+        {
+            String query = "select max(did) form newDonor";
+            DataSet ds = fn.getData(query);
+            int count in
+                t.Parse(ds.Tables[0].Rows[0][0].ToString());
+            lebelNewID.Text = (count).ToString();
+        }
     }
 }
